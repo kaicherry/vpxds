@@ -214,8 +214,9 @@ void VPXDisplayServer::Capture(struct mg_connection *c, void *ev_data)
       return;
    }
 
+   szFilenameTag = "mix";
    std::filesystem::path path = string(szPath);
-   string szCapture = m_szCachePath + path.stem().string() + "-" + szDisplay + ".png";
+   string szCapture = m_szCachePath + path.stem().string() + "-" + szFilenameTag + ".png";
 
    // ffmpeg -f x11grab -video_size 1024x768 -i :0.0+1080,0 -vframes 1 "vpxfile-backglass.png"
 
