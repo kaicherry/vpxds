@@ -44,6 +44,7 @@ private:
    VPXDisplay* m_pBackglassDisplay;
    VPXDisplay* m_pDMDDisplay;
 
+   string m_szFilenameTag;
    string m_szCachePath;
    string m_szBasePath;
    string m_szESUrl;
